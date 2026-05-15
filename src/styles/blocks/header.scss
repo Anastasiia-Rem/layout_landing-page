@@ -1,5 +1,4 @@
 .header {
-  // display: none !important;
   background-image: url(/src/images/header-bg.png);
   background-size: cover;
   background-position: center;
@@ -18,6 +17,14 @@
     line-height: 100%;
 
     @include font-size(36px, 48px, 56px);
+
+    @include on-tablet {
+      max-width: 392px;
+    }
+
+    @include on-desktop {
+      max-width: 498px;
+    }
   }
 
   &__bottom {
@@ -25,6 +32,10 @@
 
     @include on-tablet {
       padding-bottom: 65px;
+    }
+
+    @include on-desktop {
+      padding-bottom: 92px;
     }
   }
 }
