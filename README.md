@@ -15,7 +15,7 @@ The project includes a header, burger menu, product recommendations, product cat
 
 ## Preview
 
-[Demo link][(https://Anastasiia-Rem.github.io/layout_landing-page/)]
+[Demo link](https://Anastasiia-Rem.github.io/layout_landing-page/)
 
 ## Design
 
