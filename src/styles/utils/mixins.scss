@@ -64,3 +64,9 @@
     --columns: 12;
   }
 }
+
+@mixin contacts-hover-effect {
+  &:hover {
+    color: #7e7e83;
+  }
+}
