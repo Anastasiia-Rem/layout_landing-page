@@ -16,33 +16,35 @@
     background-image: url(../images/icons/icon-phone.svg);
     position: relative;
 
-    &::before {
-      content: '+1 234 555-55-55';
+    @include on-tablet {
+      &::before {
+        content: '+1 234 555-55-55';
 
-      position: absolute;
-      right: 100%;
-      top: 50%;
-      transform: translateY(-50%) translateX(10px);
-      margin-right: 8px;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%) translateX(10px);
+        margin-right: 8px;
 
-      opacity: 0;
-      pointer-events: none;
+        opacity: 0;
+        pointer-events: none;
 
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 2px;
-      color: #292929;
-      white-space: nowrap;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        color: #292929;
+        white-space: nowrap;
 
-      transition:
-        opacity $effect-duration,
-        transform $effect-duration;
-    }
+        transition:
+          opacity $effect-duration,
+          transform $effect-duration;
+      }
 
-    &:hover::before {
-      opacity: 1;
-      transform: translateY(-50%) translateX(0);
+      &:hover::before {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+      }
     }
   }
 
