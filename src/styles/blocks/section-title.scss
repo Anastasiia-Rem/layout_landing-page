@@ -5,7 +5,7 @@
   font-weight: 700;
   line-height: 32px;
 
-  @include font-size(32px, 40px, 48px);
+  @include responsive-font-size(32px, 40px, 48px);
 
   @include on-tablet {
     margin-bottom: 56px;

@@ -16,7 +16,7 @@
     font-weight: 700;
     line-height: 100%;
 
-    @include font-size(36px, 48px, 56px);
+    @include responsive-font-size(36px, 48px, 56px);
 
     @include on-tablet {
       max-width: 392px;

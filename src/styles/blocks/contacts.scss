@@ -26,17 +26,17 @@
   &__input {
     box-sizing: border-box;
     width: 100%;
-    background-color: #f8f8fa;
+    background-color: $color-surface-light;
     min-height: 48px;
     padding: 14px 16px;
-    border-radius: 8px;
-    font-family: 'Space Mono', monospace;
+    border-radius: $border-radius-main;
+    font-family: $font-secondary;
     font-size: 14px;
     line-height: 140%;
     color: #292929;
 
     &::placeholder {
-      color: #7e7e83;
+      color: $color-text-secondary;
     }
 
     &--textarea {
@@ -44,7 +44,7 @@
     }
 
     &:hover {
-      border: 1px solid #d5d7de;
+      border: 1px solid $color-border-default;
 
       &::placeholder {
         color: #292929;
@@ -82,14 +82,14 @@
     margin: 0;
     font-size: 14px;
     line-height: 140%;
-    color: #9393a3;
+    color: $color-form-label;
   }
 
   &__value {
     text-decoration: none;
-    font-family: 'Space Mono', monospace;
-    color: #191919;
+    font-family: $font-secondary;
+    color: $color-contant-text;
 
-    @include contacts-hover-effect;
+    @include text-hover-effect;
   }
 }

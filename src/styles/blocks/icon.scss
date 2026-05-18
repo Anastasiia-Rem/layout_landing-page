@@ -36,8 +36,8 @@
       white-space: nowrap;
 
       transition:
-        opacity $effectDuration,
-        transform $effectDuration;
+        opacity $effect-duration,
+        transform $effect-duration;
     }
 
     &:hover::before {

@@ -28,7 +28,7 @@
   @include content-padding-inline;
 }
 
-@mixin font-size($mobile, $tablet, $desktop) {
+@mixin responsive-font-size($mobile, $tablet, $desktop) {
   font-size: $mobile;
 
   @include on-tablet {
@@ -41,7 +41,7 @@
 }
 
 @mixin hover($property, $toValue) {
-  transition: #{$property} $effectDuration;
+  transition: #{$property} $effect-duration;
   &:hover {
     #{$property}: $toValue;
   }
@@ -65,8 +65,8 @@
   }
 }
 
-@mixin contacts-hover-effect {
+@mixin text-hover-effect {
   &:hover {
-    color: #7e7e83;
+    color: $color-text-secondary;
   }
 }
